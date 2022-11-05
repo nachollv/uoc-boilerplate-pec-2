@@ -66,3 +66,26 @@ Always run the following commands during the development stage and for productio
 Feel free to create a [new issue](https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues/new/) or drop me a line at jorditarrida@uoc.edu.
 
 Are you using this Boilerplate for your projects or for educational purposes? I would love to hear about it!
+
+
+## Asignatura de destino
+
+Este boilerplate se usará en la asignatura Herramientas HTML y CSS II del máster de diseño de aplicaciones y sitios web de la UOC
+
+## La guía de estilo usada
+
+haré uso de la guía de estilo de Airbnb
+
+## La metodología CSS
+
+usaré la metodología BEM
+
+## Dependencias adicionales
+
+### instalaré Free FontAwesome, con el comando:
+npm install --save @fortawesome/fontawesome-free
+
+### instalaré Stylelint, con el comando:
+
+npm install stylelint stylelint-scss
+
