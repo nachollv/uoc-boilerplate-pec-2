@@ -82,10 +82,9 @@ usaré la metodología BEM
 
 ## Dependencias adicionales
 
-### instalaré Free FontAwesome, con el comando:
+### Instalaré Free FontAwesome, con el comando:
 npm install --save @fortawesome/fontawesome-free
 
-### instalaré Stylelint, con el comando:
-
+### Instalaré Stylelint, con el comando:
 npm install stylelint stylelint-scss
 
