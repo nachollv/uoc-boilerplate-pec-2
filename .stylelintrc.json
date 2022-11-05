@@ -1,0 +1,40 @@
+{
+    "plugins": [
+        "stylelint-scss"
+      ],
+    "extends": ["stylelint-config-recommended-scss"],
+    "rules": {  
+                "indentation": 2,
+                "color-no-invalid-hex": true, 
+                "font-family-no-duplicate-names": true, "named-grid-areas-no-invalid": true,
+                "unit-no-unknown": true,
+                "at-rule-empty-line-before": "always",
+                "block-no-empty": true,
+                "comment-no-empty": true,
+                "property-no-unknown": true,
+                "color-hex-length": "long",
+                "color-named": "never",
+                "declaration-no-important": true,
+                "length-zero-no-unit": true,
+                "unit-allowed-list": ["px", "rem", "vh", "%", "fr"],
+                "selector-max-type": 2,
+                "number-leading-zero": "always",
+                "declaration-colon-space-after": "always",
+                "block-opening-brace-newline-after": "always",
+                "block-closing-brace-newline-before": "always",
+
+                "function-comma-space-after": "always",
+                "function-parentheses-space-inside": "always",
+
+                "value-keyword-case": ["lower", {"ignoreKeywords": ["BlinkMacSystemFont", "Roboto", "Arial"]}],
+                "function-name-case": "lower",
+
+
+                "scss/at-rule-no-unknown": true,
+                "scss/dollar-variable-pattern": "^-?[a-z][a-z0-9]*(--?[a-z0-9]+)*$",
+                "scss/selector-no-redundant-nesting-selector": true,
+                "scss/at-import-partial-extension": "always",
+                 
+                "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}" 
+              }
+}
