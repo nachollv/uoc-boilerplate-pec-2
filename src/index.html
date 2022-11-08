@@ -5,24 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Jazz Festival</title>
   </head>
   <body>
+
     <include src="./views/header.html"></include>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+
+    <section class="festival-container">
+      <picture class="festival-container__picture">
+        <source srcset="./assets/images/trumpet-png-hd-yamaha-custom-trumpet-trumpet-hd-png-2500.jpg?as=webp&width=350" type="image/webp">
+        <img src="./assets/images/trumpet-png-hd-yamaha-custom-trumpet-trumpet-hd-png-2500.jpg?width=350" alt="Yamaha Custom Trumpet - Trump - 128959" class="yamaha-trumpet" />
       </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
+      <h1 class="festival-container__h1">JAZZ FESTIVAL</h1>
+      <span class="festival-contatiner__h2">
+        Blues quartet
+      </span>
+      <span class="festival-container__h2">Jazz quartet</span>
+      <span class="festival-container__h3">Live music</span>
+    </section>
+    
+    <include src="./views/footer.html"></include> 
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  
   </body>
 </html>
