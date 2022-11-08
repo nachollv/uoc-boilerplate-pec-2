@@ -4,6 +4,7 @@
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
+    "stylelint": "stylelint src/**/*.scss",
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
@@ -47,6 +48,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
     "stylelint": "^14.14.1",
+    "stylelint-config-standard": "^29.0.0",
     "stylelint-scss": "^4.3.0"
   }
 }
