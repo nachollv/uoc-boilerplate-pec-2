@@ -49,7 +49,8 @@ body {
 
 .festival-container {
   display: grid;
-  grid-template-rows: 1/2 2/3 1fr;
+  grid-template-rows: repeat( 3, 1fr );
+ /*  grid-row: 1 / span 2; */
   grid-template-columns: repeat( 3, 1fr );
   grid-auto-rows: 200px;
   row-gap: 1rem;
@@ -58,9 +59,14 @@ body {
   padding: 2rem;
   border-radius: 2rem;
   text-align: center;
-  background-image: linear-gradient(#de9e17, #f8e0af);
+  /* background-image: linear-gradient(#de9e17, #f8e0af); */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.festival-container__picture {
+  background-color: chartreuse;
+  transform: rotate(-60deg);
 }
 
 .festival-container__h1 {
@@ -68,7 +74,8 @@ body {
   font-size: 6rem;
   font-weight: 800;
   color: $uoc-corporate;
-
+  background-color: aqua;
+  transform: rotate(-60deg);
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
   }
@@ -79,7 +86,7 @@ body {
   font-size: 3rem;
   font-weight: 800;
   color: $uoc-corporate;
-
+  background-color: brown;
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
   }
