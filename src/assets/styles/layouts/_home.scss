@@ -61,6 +61,8 @@ body {
 }
 
 .festival-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
