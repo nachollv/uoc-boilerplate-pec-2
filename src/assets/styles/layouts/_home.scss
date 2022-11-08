@@ -3,8 +3,10 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+/*   display: flex;
+  flex-direction: column; */
   height: 100vh;
   margin: 0;
   padding: 2rem;
@@ -13,27 +15,6 @@ body {
   line-height: 24px;
   background-color: $uoc-bg;
   color: $uoc-corporate;
-}
-
-.festival-header__nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.festival-header__menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.festival-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .festival-header__logo {
@@ -49,21 +30,98 @@ body {
   }
 }
 
+.festival-header__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.festival-header__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  list-style: none;
+  border: 1px solid aquamarine;
+}
+
+.festival-header__menu > li {
+  border: 2px solid rebeccapurple;
+}
+
+.festival-container {
+  display: grid;
+  grid-template-rows: 1/2 2/3 1fr;
+  grid-template-columns: repeat( 3, 1fr );
+  grid-auto-rows: 200px;
+  row-gap: 1rem;
+  /* max-width: 800px; */
+  /* margin: auto; */
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-image: linear-gradient(#de9e17, #f8e0af);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 .festival-container__h1 {
   font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 6rem;
+  font-weight: 800;
   color: $uoc-corporate;
 
   @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+    /* font-size: 36px; */
+  }
+}
+
+.festival-container__h2 {
+  font-family: $font-family-sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: $uoc-corporate;
+
+  @media (min-width: $mqMinWidth) {
+    /* font-size: 36px; */
+  }
+}
+
+.festival-container__h3 {
+  font-family: $font-family-sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $uoc-corporate;
+
+  @media (min-width: $mqMinWidth) {
+    /* font-size: 36px; */
   }
 }
 
 .festival-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat( 3, 1fr );
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+}
+
+.festival-footer__menu {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat( 4, 1fr );
+  text-align: center;
+}
+
+.festival-footer__menu > li {
+  border: 2px solid rebeccapurple;
+}
+
+.festival-footer__social {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr );
+  text-align: center;
+}
+
+.festival-footer__social > li {
+  border: 2px solid rebeccapurple;
 }
