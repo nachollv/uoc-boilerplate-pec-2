@@ -87,6 +87,7 @@ body {
   border-radius: 2rem;
   background-color: aqua;
   transform: rotate(-60deg);
+  
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
   }
@@ -128,6 +129,7 @@ body {
   border-radius: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
   }
