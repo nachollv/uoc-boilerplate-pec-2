@@ -87,7 +87,7 @@ body {
   border-radius: 2rem;
   background-color: aqua;
   transform: rotate(-60deg);
-  
+
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
   }
@@ -161,6 +161,7 @@ body {
 
   &:hover {
     color: black;
+    text-decoration: wavy;
   }
 }
 
