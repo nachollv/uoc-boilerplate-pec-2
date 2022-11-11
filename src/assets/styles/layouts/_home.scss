@@ -3,48 +3,38 @@
 }
 
 body {
-  display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-/*   display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column; 
   height: 100vh;
   margin: 0;
   padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
-  line-height: 24px;
   background-color: $bg;
   color: $corporate;
 }
 
 .festival-header {
   z-index: 9999;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .festival-header__logo {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  max-width: 300px;
   height: auto;
+  font-size: smaller;
 
   @media (min-width: $mqMinWidth) {
-    max-width: none;
+    max-width: 100%;
   }
-}
-
-.festival-header__nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-
 }
 
 .festival-header__menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   text-align: center;
   list-style: none;
 }
@@ -61,7 +51,6 @@ body {
 
 .festival-container {
   display: grid;
-  grid-template-rows: repeat( 3, 1fr );
   grid-template-columns: repeat( 3, 1fr );
   grid-auto-rows: 200px;
   row-gap: 1rem;
@@ -74,14 +63,14 @@ body {
 }
 
 .festival-container__picture {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,212,255,1) 100%);
+/*   background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,212,255,1) 100%); */
   transform: rotate(-75deg);
 }
 
 .festival-container__h1 {
   font-family: $font-family-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 800;
   color: $corporate;
   border-radius: 2rem;
@@ -95,7 +84,7 @@ body {
 
 .festival-container__h2 {
   font-family: $font-family-sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   color: $corporate;
   border-radius: 2rem;
@@ -137,8 +126,7 @@ body {
 
 .festival-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   z-index: 9999;
   margin-top: 1.5rem;
   /* font-size: 0.75rem; */
@@ -149,7 +137,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat( 4, 1fr );
-  grid-template-rows: repeat( 4, 1fr );
+/*   grid-template-rows: repeat( 4, 1fr ); */
 
   text-align: center;
 }
@@ -169,7 +157,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat( 3, 1fr );
-  grid-template-rows: repeat( 3, 1fr );
+/*   grid-template-rows: repeat( 3, 1fr ); */
 
   text-align: center;
 }
