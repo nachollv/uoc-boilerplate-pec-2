@@ -51,21 +51,28 @@ body {
 
 .festival-container {
   display: grid;
-  grid-template-columns: repeat( 3, 1fr );
-  grid-auto-rows: 200px;
+  grid-template-areas: "picture jazz festival"
+                     "a c d";
+  
   row-gap: 1rem;
   padding: 2rem;
   border-radius: 2rem;
   text-align: center;
-  /* background-image: linear-gradient(#de9e17, #f8e0af); */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .festival-container__picture {
-/*   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,212,255,1) 100%); */
-  transform: rotate(-75deg);
+  grid-area: picture;
+  transform: rotate(-60deg);
+}
+
+.festival-container__h1-jazz {
+  grid-area: jazz;
+}
+
+.festival-container__h1-festival {
+  grid-area: festival;
 }
 
 .festival-container__h1 {
@@ -89,7 +96,7 @@ body {
   color: $corporate;
   border-radius: 2rem;
   background-color: brown;
-  transform: rotate(-45deg);
+  transform: rotate(-30deg);
 
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
