@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   display: flex;
   flex-direction: column; 
   height: 100vh;
@@ -10,6 +10,19 @@ body {
   padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
+  background-color: $bg;
+  color: $corporate;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   background-color: $bg;
   color: $corporate;
 }
@@ -49,7 +62,7 @@ body {
   }
 }
 
-.festival-container {
+/* .festival-container {
   display: grid;
   grid-template-areas: "picture jazz festival"
                      "a c d";
@@ -58,6 +71,22 @@ body {
   padding: 2rem;
   border-radius: 2rem;
   text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+} */
+
+.festival-container {
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "picture jazz festival"
+                     "a c d";
+  
+  row-gap: 1rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -135,7 +164,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   z-index: 9999;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   /* font-size: 0.75rem; */
   text-align: center;
 }
