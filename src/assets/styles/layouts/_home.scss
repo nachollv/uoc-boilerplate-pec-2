@@ -2,18 +2,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  display: flex;
-  flex-direction: column; 
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  background-color: $bg;
-  color: $corporate;
-} */
-
 body {
   display: flex;
   flex-direction: column;
@@ -62,28 +50,21 @@ body {
   }
 }
 
-/* .festival-container {
-  display: grid;
-  grid-template-areas: "picture jazz festival"
-                     "a c d";
-  
-  row-gap: 1rem;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-} */
-
-.festival-container {
+.container {
   max-width: 100%;
   margin: auto;
   display: grid;
-  grid-template-areas: "picture jazz festival"
-                     "a c d";
+  grid-template-areas:  /* "picture titlejazz titlefestival"
+                        "picture blues bluesquartet"
+                        "picture jazz jazzquartet"
+                        "picture live music" */
+                        "titlejazz picture titlefestival"
+                        "blues picture jazz"
+                        "bluesquartet picture jazzquartet"
+                        "live picture music";
   
   row-gap: 1rem;
-  padding: 2rem;
+  padding: 6rem;
   border-radius: 2rem;
   text-align: center;
   background-color: #fff;
@@ -91,67 +72,88 @@ body {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.festival-container__picture {
+.container__picture {
   grid-area: picture;
-  transform: rotate(-60deg);
+  /* transform: rotate(-60deg); */
+  margin: auto;
+
 }
 
-.festival-container__h1-jazz {
+.container__h1-jazz {
+  grid-area: titlejazz;
+  transform: rotate(45deg);
+}
+
+.container__h1-festival {
+  grid-area: titlefestival;
+  transform: rotate(-45deg);
+}
+
+.container__h2-blues {
+  grid-area: blues;
+  transform: rotate(30deg);
+}
+
+.container__h2-bluesquartet {
+  grid-area: bluesquartet;
+}
+
+.container__h2-jazz {
   grid-area: jazz;
+  transform: rotate(-30deg);
 }
 
-.festival-container__h1-festival {
-  grid-area: festival;
+.container__h2-jazzquartet {
+  grid-area: jazzquartet;
 }
 
-.festival-container__h1 {
+.container__h4-live {
+  grid-area: live;
+  transform: rotate(-15deg);
+}
+
+.container__h4-music {
+  grid-area: music;
+  transform: rotate(15deg);
+}
+
+.container__h1 {
   font-family: $font-family-serif;
   font-size: 4rem;
   font-weight: 800;
   color: $corporate;
   border-radius: 2rem;
+  padding: 3rem;
   background-color: aqua;
-  transform: rotate(-60deg);
+
 
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
   }
 }
 
-.festival-container__h2 {
+.container__h2 {
   font-family: $font-family-sans-serif;
   font-size: 3rem;
   font-weight: 800;
   color: $corporate;
   border-radius: 2rem;
-  background-color: brown;
-  transform: rotate(-30deg);
-
+  background-color: #fdf3e3;
+  margin: 2rem;
+  padding: 3rem;
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
   }
 }
 
-.festival-container__h3 {
-  font-family: $font-family-sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
-  color: $corporate;
-  border-radius: 2rem;
-  transform: rotate(-15deg);
-
-  @media (min-width: $mqMinWidth) {
-    /* font-size: 36px; */
-  }
-}
-
-.festival-container__h4 {
+.container__h4 {
   font-family: $font-family-sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: $corporate;
-  transform: rotate(15deg);
   border-radius: 2rem;
+  margin: 2rem;
+  padding: 3rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
@@ -161,11 +163,10 @@ body {
 }
 
 .festival-footer {
+  margin-top: 3rem;
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: auto 3fr 1fr;
   z-index: 9999;
-  /* margin-top: 1.5rem; */
-  /* font-size: 0.75rem; */
   text-align: center;
 }
 
@@ -173,8 +174,6 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat( 4, 1fr );
-/*   grid-template-rows: repeat( 4, 1fr ); */
-
   text-align: center;
 }
 
@@ -193,7 +192,20 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat( 3, 1fr );
-/*   grid-template-rows: repeat( 3, 1fr ); */
-
   text-align: center;
+}
+
+.container-flex {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 6rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
