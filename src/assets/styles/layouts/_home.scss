@@ -92,6 +92,7 @@ body {
 
 .container__h2-bluesquartet {
   grid-area: bluesquartet;
+  transform: rotate(-15deg);
 }
 
 .container__h2-jazz {
@@ -101,16 +102,20 @@ body {
 
 .container__h2-jazzquartet {
   grid-area: jazzquartet;
+  transform: rotate(15deg);
 }
 
 .container__h4-live {
   grid-area: live;
   transform: rotate(-25deg);
+  letter-spacing: 1rem;
 }
 
 .container__h4-music {
   grid-area: music;
   transform: rotate(25deg);
+  letter-spacing: 1rem;
+
 }
 
 .container__h1 {
@@ -121,6 +126,9 @@ body {
   border-radius: 2rem;
   padding: 2rem;
   background-color: #e6c376;
+  border: 1px solid #b91b0b;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
@@ -134,8 +142,11 @@ body {
   color: $corporate;
   border-radius: 2rem;
   background-color: #e4a321;
+  border: 1px solid #b91b0b;
   margin: 2rem;
   padding: 3rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
@@ -147,15 +158,37 @@ body {
   font-size: 2rem;
   font-weight: 600;
   color: $corporate;
-  background-color: #e8e8e8;
+  background-color: #000;
+  border: 1px solid #e8e8e8;
   border-radius: 2rem;
   margin: 2rem;
   padding: 3rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
+
   @media (min-width: $mqMinWidth) {
     /* font-size: 36px; */
+  }
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  margin-top: 2rem;
+}
+
+.newsletter__email{
+  text-align: right;
+}
+
+.newsletter__input {
+  padding: .75rem;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -181,7 +214,6 @@ body {
 
   &:hover {
     color: black;
-    text-decoration: wavy;
   }
 }
 
@@ -198,14 +230,11 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
-  background-color: #fff;
-
 }
 
 .container-flex__card {
 
-  background-color: #f1f1f1;
+  background-color: #e4a321;
   border: 2px solid $corporate;
   width: calc( $mqMaxWidth/2 - 6rem );
   padding: 6rem;
@@ -214,7 +243,6 @@ body {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-
 
 .container-flex__content {
   text-decoration: underline;
