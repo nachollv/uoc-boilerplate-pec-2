@@ -61,14 +61,22 @@ body {
   text-align: center;
   background: #020024;
   background: radial-gradient( circle, rgba( 255, 255, 255, 1 ) 85%, rgba( 255, 255, 255, 1 ) 0%, #f6e9d6 100% );
-  box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ),
-    0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
+  box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
+
+  @media (min-width: $mqminwidth) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .container-grid {
   display: grid;
   grid-template-areas: "picture titlejazz titlefestival" "picture blues bluesquartet" "picture jazz jazzquartet" "picture live music";
   row-gap: 1rem;
+
+  @media (min-width: $mqminwidth) {
+    grid-template-areas: "picture" "titlejazz" "titlefestival" "blues" "bluesquartet" "jazz" "jazzquartet" "live" "music";
+  }
 }
 
 .container__picture {
