@@ -328,4 +328,8 @@ body {
 
 .form__input--medium {
   width: 50%;
+
+  @media (max-width: $mqminwidth) {
+    width: 100%;
+  }
 }
