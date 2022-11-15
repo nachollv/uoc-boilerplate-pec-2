@@ -63,17 +63,17 @@ body {
   
   row-gap: 1rem;
   padding: 6rem;
-  /* border-radius: 2rem; */
+  border-radius: 2rem;
   text-align: center;
 /*   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 0%, #f6e9d6 100%); */
 
   background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 0%, #f6e9d6 100%);
+  background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 0%, #f6e9d6 100%);
 
 
-/*   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .container__picture {
