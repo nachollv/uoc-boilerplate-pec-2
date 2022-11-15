@@ -16,7 +16,7 @@
                 "color-named": "never",
                 "declaration-no-important": true,
                 "length-zero-no-unit": true,
-                "unit-allowed-list": ["px", "rem", "vh", "%", "fr"],
+                "unit-allowed-list": ["px", "rem", "vh", "%", "fr", "deg"],
                 "selector-max-type": 2,
                 "number-leading-zero": "always",
                 "declaration-colon-space-after": "always",
