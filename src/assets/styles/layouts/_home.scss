@@ -53,27 +53,26 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: $mqMaxWidth;
   margin: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 0%, #f6e9d6 100%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.container-grid {
   display: grid;
   grid-template-areas:  "picture titlejazz titlefestival"
-                        "picture blues jazz"
-                        "picture bluesquartet jazzquartet"
+                        "picture blues bluesquartet"
+                        "picture jazz jazzquartet"
                         "picture live music";
   
   row-gap: 1rem;
-  padding: 6rem;
-  border-radius: 2rem;
-  text-align: center;
-/*   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 0%, #f6e9d6 100%); */
-
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 0%, #f6e9d6 100%);
-
-
-   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .container__picture {
@@ -164,7 +163,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   color: $corporate;
-  background-color: #000;
+  background-color: #000000;
   border: 2px dotted #e4a321;
   border-radius: 2rem;
   margin: 2rem;
@@ -178,18 +177,18 @@ body {
   }
 }
 
-.newsletter {
+.form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
-.newsletter__email{
+.form__email {
   text-align: right;
 }
 
-.newsletter__input {
+.form__input {
   padding: .75rem;
   border-radius: 5px;
 
@@ -258,7 +257,7 @@ body {
   }
 }
 /* -------------------------------------- */
-/* Page four ------------------- bio page */
+/* Page third ------------------- bio page */
 .container-bio {
   display: grid;
   grid-template-columns: 1fr;
@@ -298,4 +297,28 @@ body {
 .container-bio__img {
   width: 100%;
   height: auto;
+}
+
+/* ---------------------------------- */
+/* page fourth --------  contact form */
+.form--contact {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.form__section {
+  border: 1px dotted #bbbaba;
+  text-align: left;
+  padding: 5px;
+}
+
+.form__input {
+  width: 100%;
+  &:hover, &:focus {
+    background-color: #e6c376;
+  }
+}
+
+.form__input--medium {
+  width: 50%;
 }

@@ -14,36 +14,43 @@
 
     <include src="./views/header.html"></include>
 
-    <section class="container">The content of the Fourth Page still has to be decided.
-      Some ideas:
-      - Our videos on YouTube and our songs on Spotify.
-      - Contact Form.
-      - Picture gallery.
-      - An interactive game
+    <section class="container">
 
-
-      <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br>
-        <section class="newsletter__email">
-          <label for="your-mail">Contact E.mail:</label>
-          <input class="newsletter__input" type="mail" id="your-mail" name="your-mail" placeholder="mymail@domain.com">
+      <form class="form form--contact" action="/action_page.php">
+        <section class="form__section">
+          <label for="fname">First name:</label><br>
+          <input class="form__input" type="text" id="fname" name="fname" placeholder="John"><br>
         </section>
-        <label for="cars">Choose an instrument:</label>
-<select id="instruments" name="instruments">
-  <option value="none">---Select your instrument---</option>
-  <option value="Trumpet">Trumpet</option>
-  <option value="Drums">Drums</option>
-  <option value="Clarinet">Clarinet</option>
-  <option value="Bassist">Bassist</option>
-</select><br>
-<label for="mySkills">Tell us about your skills:</label><br>
-<textarea name="mySkills" rows="10" cols="30">
-  My skills are ...
-  </textarea>
-        <input type="submit" value="Submit">
+
+        <section class="form__section">
+          <label for="lname">Last name:</label><br>
+          <input class="form__input" type="text" id="lname" name="lname" placeholder="Doe"><br>
+        </section>
+
+        <section class="form__section">
+          <label for="your-mail">Contact E.mail:</label><br>
+          <input class="form__input" type="mail" id="your-mail" name="your-mail" placeholder="mymail@domain.com">
+        </section>
+
+        <section class="form__section">
+          <label for="cars">Choose an instrument:</label><br>
+          <select class="form__input" id="instruments" name="instruments">
+            <option value="none">---Select your instrument---</option>
+            <option value="Trumpet">Trumpet</option>
+            <option value="Drums">Drums</option>
+            <option value="Clarinet">Clarinet</option>
+            <option value="Bassist">Bassist</option>
+          </select>
+        </section>
+
+        <section class="form__section">
+          <label for="mySkills">Tell us about your skills:</label><br>
+          <textarea class="form__input" name="mySkills" rows="10" cols="30">My skills are ...</textarea>
+        </section>
+
+        <section class="form__section">
+          <input class="form__input" type="submit" value="Submit">
+        </section>
       </form>
     </section>
 
