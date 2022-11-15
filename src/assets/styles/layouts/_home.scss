@@ -56,44 +56,49 @@ body {
   max-width: $mqMaxWidth;
   margin: auto;
   display: grid;
-  grid-template-areas:  "titlejazz picture titlefestival"
-                        "blues picture jazz"
-                        "bluesquartet picture jazzquartet"
-                        "live picture music";
+  grid-template-areas:  "picture titlejazz titlefestival"
+                        "picture blues jazz"
+                        "picture bluesquartet jazzquartet"
+                        "picture live music";
   
   row-gap: 1rem;
   padding: 6rem;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   text-align: center;
+/*   background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 0%, #f6e9d6 100%); */
+
   background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(253,253,251,1) 50%, #f6e9d6 100%);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 0%, #f6e9d6 100%);
+
+
+/*   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); */
 }
 
 .container__picture {
   grid-area: picture;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .container__h1-jazz {
   grid-area: titlejazz;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 .container__h1-festival {
   grid-area: titlefestival;
-  transform: rotate(-45deg);
+  transform: rotate(0deg);
 }
 
 .container__h2-blues {
   grid-area: blues;
-  transform: rotate(30deg);
+  transform: rotate(20deg);
 }
 
 .container__h2-bluesquartet {
   grid-area: bluesquartet;
-  transform: rotate(-15deg);
+  transform: rotate(40deg);
 }
 
 .container__h2-jazz {
@@ -108,13 +113,13 @@ body {
 
 .container__h4-live {
   grid-area: live;
-  transform: rotate(-25deg);
+  transform: rotate(40deg);
   letter-spacing: 1rem;
 }
 
 .container__h4-music {
   grid-area: music;
-  transform: rotate(25deg);
+  transform: rotate(5deg);
   letter-spacing: 1rem;
 
 }
@@ -127,7 +132,7 @@ body {
   border-radius: 2rem;
   padding: 2rem;
   background-color: #e6c376;
-  border: 1px solid #b91b0b;
+  border: 5px solid #b91b0b;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
@@ -160,7 +165,7 @@ body {
   font-weight: 600;
   color: $corporate;
   background-color: #000;
-  border: 1px solid #e8e8e8;
+  border: 2px dotted #e4a321;
   border-radius: 2rem;
   margin: 2rem;
   padding: 3rem;
@@ -234,7 +239,6 @@ body {
 }
 
 .container-flex__card {
-
   background-color: #e4a321;
   border: 2px solid $corporate;
   width: calc( $mqMaxWidth/2 - 6rem );
@@ -246,9 +250,52 @@ body {
 }
 
 .container-flex__content {
-  text-decoration: underline;
+  text-decoration: none;
   
   &:hover {
     cursor: pointer;
+    text-decoration: underline;
   }
+}
+/* -------------------------------------- */
+/* Page four ------------------- bio page */
+.container-bio {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container-bio__caption {
+  font-size: .75rem;
+  text-align: center;
+}
+
+.container-bio__h1 {
+  font-family: $font-family-serif;
+}
+
+.container-bio__h2 {
+  font-family: $font-family-serif;
+}
+
+.container-bio__p {
+  font-family: $font-family-sans-serif;
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container-bio__cite {
+  font-weight: 400;
+}
+
+.container-bio__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.container-bio__img {
+  width: 100%;
+  height: auto;
 }

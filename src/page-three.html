@@ -14,40 +14,107 @@
 
     <include src="./views/header.html"></include>
 
-    <section class="container"><h1>My Jazz Band BIO PAGE</h1> 
+    <section class="container-bio"><h1 class="container-bio__h1">My Jazz Band. The BIO PAGE</h1> 
       
-      <article>
-        <figure>
-          <img src="assets/images/jazz-musician-at-sunrise.jpg" alt="jazz musician at sunrise" style="width:100%">
-          <figcaption>Fig.1 - Jazz musician at sunrise. License: CC0 Public Domain
+      <article class="container-bio__article">
+        <figure class="container-bio__figure">
+          <img class="container-bio__img" src="assets/images/jazz-musician-at-sunrise.jpg" alt="jazz musician at sunrise" style="width:100%">
+          <figcaption class="container-bio__caption">Fig.1 - Jazz musician at sunrise. License: CC0 Public Domain
 
             Karen Arnold has released this “Jazz Musician At Sunrise” image under Public Domain license. It means that you can use and modify it for your personal and commercial projects. If you intend to use an image you find here for commercial use, please be aware that some photos do require a model or a property release. Pictures featuring products should be used with care.</figcaption>
         </figure>
-        <h2>My Jazz Band</h2>
-        <p>My Jazz Band is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        <h2 class="container-bio__h2">My Jazz Band Origins</h2>
+        <p class="container-bio__p">
+          Jazz is a music genre that originated in the African-American communities of New Orleans, Louisiana in the late 19th and early 20th centuries, with its roots in blues and ragtime.
+        </p>
+        <p class="container-bio__p">
+          Since the 1920s Jazz Age, it has been recognized as a major form of musical expression in traditional and popular music. Jazz is characterized by swing and blue notes, complex chords, call and response vocals, polyrhythms and improvisation. 
+          
+          Jazz has roots in European harmony and African rhythmic rituals.
+        </p>
+        <p class="container-bio__p">
+          As jazz spread around the world, it drew on national, regional, and local musical cultures, which gave rise to different styles. New Orleans jazz began in the early 1910s, combining earlier brass band marches, French quadrilles, biguine, ragtime and blues with collective polyphonic improvisation. But jazz did not begin as a single musical tradition in New Orleans or elsewhere.[7] In the 1930s, arranged dance-oriented swing big bands, Kansas City jazz (a hard-swinging, bluesy, improvisational style), and gypsy jazz (a style that emphasized musette waltzes) were the prominent styles. Bebop emerged in the 1940s, shifting jazz from danceable popular music toward a more challenging "musician's music" which was played at faster tempos and used more chord-based improvisation. Cool jazz developed near the end of the 1940s, introducing calmer, smoother sounds and long, linear melodic lines.
+          <cite class="container-bio__cite" title="origen de la fuente en Wikipedia" lang="es-ES">from URI: https://en.wikipedia.org/wiki/Jazz</cite>  
+        </p>
       </article>
-      <article>
-        <figure>
-          <img src="assets/images/jazz-player.jpg" alt="jazz player" style="width:100%">
-          <figcaption>Fig.2 - Jazz player. License: CC0 Public Domain
+
+      <article class="container-bio__article">
+        <figure class="container-bio__figure">
+          <img class="container-bio__img" src="assets/images/jazz-player.jpg" alt="jazz player" style="width:100%">
+          <figcaption class="container-bio__caption">Fig.2 - Jazz player. License: CC0 Public Domain
 
             mohamed mahmoud hassan has released this “Jazz Player” image under Public Domain license. It means that you can use and modify it for your personal and commercial projects. If you intend to use an image you find here for commercial use, please be aware that some photos do require a model or a property release. Pictures featuring products should be used with care.</figcaption>
         </figure>
-        <h2>My Jazz Band</h2>
-        <p>My Jazz Band is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        <h2 class="container-bio__h2">My Jazz Band most famous concerts</h2>
+        <span class="container-bio__span">These are the six most popular My Jazz Band picture concerts</span>
+
+        <section class="container-bio__section">
+
+          <picture>
+            <source media = "(min-width: 550px)" srcset = "./assets/images/concerts/800px-Wolverine_orchestra_1924-600x439.jpg" >
+            <source media = "(min-width: 465px)" srcset = "./assets/images/concerts/800px-Wolverine_orchestra_1924-600x439.jpg" >
+            <img  class="container-bio__img" src = "./assets/images/concerts/800px-Wolverine_orchestra_1924-600x439.jpg" alt="Wolverine Orchestra" >
+          </picture>
+
+          <picture>
+            <source media = "(min-width: 550px)" srcset = "./assets/images/concerts/ct-jazz-scene-20141030.jpg" >
+            <source media = "(min-width: 465px)" srcset = "./assets/images/concerts/ct-jazz-scene-20141030.jpg" >
+            <img class="container-bio__img" src = "./assets/images/concerts/ct-jazz-scene-20141030.jpg" alt="ct Jazz scene" >
+          </picture>
+
+          <picture>
+            <source media = "(min-width: 550px)" srcset = "./assets/images/concerts/jazz-at-the-philharmonic-concert-salle-pleyel-1252d8-1600.jpg" >
+            <source media = "(min-width: 465px)" srcset = "./assets/images/concerts/jazz-at-the-philharmonic-concert-salle-pleyel-1252d8-1600.jpg" >
+            <img class="container-bio__img" src = "./assets/images/concerts/jazz-at-the-philharmonic-concert-salle-pleyel-1252d8-1600.jpg" alt="jazz at the philharmonic concert salle" >
+          </picture>
+          
+          <picture>
+            <source media = "(min-width: 550px)" srcset = "./assets/images/concerts/jazz-MVSE_o_tn.jpg" >
+            <source media = "(min-width: 465px)" srcset = "./assets/images/concerts/jazz-MVSE_o_tn.jpg" >
+            <img class="container-bio__img" src = "./assets/images/concerts/jazz-MVSE_o_tn.jpg" alt="jazz MVSE o tn" >
+          </picture>
+          
+          <picture>
+            <source media = "(min-width: 550px)" srcset = "./assets/images/concerts/photo-7901.jpg" >
+            <source media = "(min-width: 465px)" srcset = "./assets/images/concerts/photo-7901.jpg" >
+            <img class="container-bio__img" src = "./assets/images/concerts/photo-7901.jpg" alt="photo 7901" >
+          </picture>
+          
+          <picture>
+            <source media = "(min-width: 550px)" srcset = "./assets/images/concerts/Fats-Jazz-Band-foto-Fats-Jazz-Band.jpg" >
+            <source media = "(min-width: 465px)" srcset = "./assets/images/concerts/Fats-Jazz-Band-foto-Fats-Jazz-Band.jpg" >
+            <img class="container-bio__img" src = "./assets/images/concerts/Fats-Jazz-Band-foto-Fats-Jazz-Band.jpg" alt="Fats-Jazz-Band-foto-Fats-Jazz-Band" >
+          </picture>     
+
+        </section>
+
       </article>
-      <article>
+      
+      <article class="container-bio__article">
         <h2>My Jazz Band</h2>
-        <p>My Jazz Band is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        <p class="container-bio__p">My Jazz Band is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
       </article>
-      <article>
-        <figure>
-          <img src="assets/images/old-piano-1341657626YzX.jpg" alt="old piano" style="width:100%">
-          <figcaption>Fig.3 -Old Piano. License: CC0 Public Domain
+      
+      <article class="container-bio__article">
+        <figure class="container-bio__figure">
+          <img class="container-bio__img" src="assets/images/old-piano-1341657626YzX.jpg" alt="old piano" style="width:100%">
+          <figcaption class="container-bio__caption">Fig.3 -Old Piano. License: CC0 Public Domain
 
             George Hodan has released this “Old Piano” image under Public Domain license. It means that you can use and modify it for your personal and commercial projects. If you intend to use an image you find here for commercial use, please be aware that some photos do require a model or a property release. Pictures featuring products should be used with care.</figcaption>
-          <h2>My Jazz Band</h2>
-          <p>My Jazz Band is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+          <h2 class="container-bio__h2">My Jazz Bands style</h2>
+          <dl>
+            <dt>Acid jazz</dt>
+            <dd>Combined elements of soul music, funk, disco, including looping beats and modal harmony.</dd>
+        
+            <dt>Afro-Cuban jazz</dt>
+            <dd>It mixes Afro-Cuban clave-based rhythms with jazz harmonies and techniques of improvisation.</dd>
+        
+            <dt>Avant-garde jazz</dt>
+            <dd>A style of music and improvisation that combines avant-garde art music and composition with jazz. It originated in the 1950s and developed through the 1960s.</dd>
+
+            <dt>Bebop</dt>
+            <dd>Bebop or bop is a style of jazz characterized by a fast tempo, instrumental virtuosity, and improvisation based on a combination of harmonic structure and occasional references to the melody.</dd>
+        </dl>
         </figure>
       </article>
 
