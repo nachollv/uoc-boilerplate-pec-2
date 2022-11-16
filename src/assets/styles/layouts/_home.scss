@@ -99,12 +99,12 @@ body {
 
 .container__h1-festival {
   grid-area: titlefestival;
-  transform: rotate( -40deg );
+  transform: rotate( 40deg );
 }
 
 .container__h2-blues {
   grid-area: blues;
-  transform: rotate( 20deg );
+  transform: rotate( -20deg );
 }
 
 .container__h2-bluesquartet {
@@ -124,7 +124,7 @@ body {
 
 .container__h4-live {
   grid-area: live;
-  transform: rotate( 40deg );
+  transform: rotate( -40deg );
   letter-spacing: 1rem;
 }
 
