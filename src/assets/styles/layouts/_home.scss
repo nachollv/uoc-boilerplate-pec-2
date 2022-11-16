@@ -21,6 +21,10 @@ body {
   z-index: 9999;
   display: grid;
   grid-template-columns: auto 1fr;
+
+  @media (max-width: $mqminwidth) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .festival-header__logo {
@@ -81,6 +85,10 @@ body {
 
 .container__picture {
   grid-area: picture;
+}
+
+.container__img {
+  max-width: 100%;
 }
 
 .container__h1-jazz {
