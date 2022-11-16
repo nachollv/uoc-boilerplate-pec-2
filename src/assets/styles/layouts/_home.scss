@@ -62,7 +62,7 @@ body {
   max-width: $mqmaxwidth;
   margin: auto;
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 5px;
   text-align: center;
   background: #020024;
   background: radial-gradient( circle, rgba( 255, 255, 255, 1 ) 85%, rgba( 255, 255, 255, 1 ) 0%, #f6e9d6 100% );
@@ -346,7 +346,7 @@ body {
   @media (max-width: $mqminwidth) {
     grid-template-columns: 1fr;
   }
-  
+
 }
 
 .container-bio__img {
