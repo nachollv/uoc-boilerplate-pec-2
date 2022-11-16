@@ -198,6 +198,10 @@ body {
 
 .form__email {
   text-align: right;
+
+  @media (max-width: $mqminwidth) {
+    text-align: left;
+  }
 }
 
 .form__input {
