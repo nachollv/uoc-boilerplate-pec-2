@@ -3,7 +3,6 @@
 }
 
 body {
-
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -54,6 +53,7 @@ body {
 
   &:hover {
     color: #000000;
+    box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
   }
 }
 
@@ -132,7 +132,6 @@ body {
   grid-area: music;
   transform: rotate( 5deg );
   letter-spacing: 1rem;
-
 }
 
 .container__h1 {
@@ -236,7 +235,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  /* text-align: center; */
+
 }
 
 .festival-footer__item {
@@ -246,6 +245,7 @@ body {
 
   &:hover {
     color: #000000;
+    box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
   }
 }
 
@@ -277,10 +277,11 @@ body {
 .container-flex__content {
   text-decoration: none;
   
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
+}
+
+.container-flex__p {
+  text-align: left;
+  text-decoration: none;
 }
 /* -------------------------------------- */
 /* Page third ------------------- bio page */
@@ -329,7 +330,6 @@ body {
     line-height: 1.5rem;
     margin-left: 0.5rem;
   }
-
 }
 
 .container-bio__cite {
@@ -346,7 +346,6 @@ body {
   @media (max-width: $mqminwidth) {
     grid-template-columns: 1fr;
   }
-
 }
 
 .container-bio__img {
@@ -365,7 +364,7 @@ body {
   width: 100px;
   text-align: right;
   font-weight: bold;
-  color: #008000;
+  color: #000000;
 
   &::after {
     content: ":";
