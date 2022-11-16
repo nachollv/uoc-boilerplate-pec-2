@@ -24,8 +24,7 @@ body {
 
   @media (max-width: $mqminwidth) {
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-
+    grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -222,7 +221,7 @@ body {
   z-index: 9999;
   text-align: center;
   align-items: center;
-  
+
   @media (max-width: $mqminwidth) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
