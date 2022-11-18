@@ -66,11 +66,7 @@ body {
   text-align: center;
   background: #020024;
   background: radial-gradient( circle, rgba( 255, 255, 255, 1 ) 85%, rgba( 255, 255, 255, 1 ) 0%, #f6e9d6 100% );
-  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
-              0 4px 2px rgba(0,0,0,0.09), 
-              0 8px 4px rgba(0,0,0,0.09), 
-              0 16px 8px rgba(0,0,0,0.09),
-              0 32px 16px rgba(0,0,0,0.09);
+  box-shadow: 0 2px 1px rgba( 0, 0, 0, 0.09 ), 0 4px 2px rgba( 0, 0, 0, 0.09 ), 0 8px 4px rgba( 0, 0, 0, 0.09 ), 0 16px 8px rgba( 0, 0, 0, 0.09 ), 0 32px 16px rgba( 0, 0, 0, 0.09 );
 
   @media (max-width: $mqminwidth) {
     margin: 0;
@@ -78,13 +74,13 @@ body {
   }
 }
 
-.container-grid {
+.container--grid {
   display: grid;
-  grid-template-areas: "picture titlejazz titlefestival" "picture blues bluesquartet" "picture jazz jazzquartet" "picture live music";
+  grid-template-areas: "picture titlejazz titleband" "picture blues bluesquartet" "picture jazz jazzquartet" "picture live music";
   row-gap: 1rem;
 
   @media (max-width: $mqminwidth) {
-    grid-template-areas: "picture" "titlejazz" "titlefestival" "blues" "bluesquartet" "jazz" "jazzquartet" "live" "music";
+    grid-template-areas: "picture" "titlejazz" "titleband" "blues" "bluesquartet" "jazz" "jazzquartet" "live" "music";
   }
 }
 
@@ -96,43 +92,43 @@ body {
   max-width: 100%;
 }
 
-.container__h1-jazz {
+.container__h1--jazz {
   grid-area: titlejazz;
   transform: rotate( -45deg );
 }
 
-.container__h1-festival {
-  grid-area: titlefestival;
+.container__h1--band {
+  grid-area: titleband;
   transform: rotate( 50deg );
 }
 
-.container__h2-blues {
+.container__h2--blues {
   grid-area: blues;
   transform: rotate( -20deg );
 }
 
-.container__h2-bluesquartet {
+.container__h2--bluesquartet {
   grid-area: bluesquartet;
   transform: rotate( 40deg );
 }
 
-.container__h2-jazz {
+.container__h2--jazz {
   grid-area: jazz;
   transform: rotate( -30deg );
 }
 
-.container__h2-jazzquartet {
+.container__h2--jazzquartet {
   grid-area: jazzquartet;
   transform: rotate( 15deg );
 }
 
-.container__h4-live {
+.container__h4--live {
   grid-area: live;
   transform: rotate( -40deg );
   letter-spacing: 1rem;
 }
 
-.container__h4-music {
+.container__h4--music {
   grid-area: music;
   transform: rotate( 0 );
   letter-spacing: 1rem;
@@ -260,7 +256,7 @@ body {
   text-align: center;
 }
 
-.container-flex {
+.container--flex {
   max-width: $mqmaxwidth;
   margin: auto;
   display: flex;
