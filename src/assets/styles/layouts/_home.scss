@@ -186,27 +186,39 @@ body {
 
 .form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "formtitle formtitle" "inputtext inputsubmit";
   margin-top: 1rem;
-  gap: 1rem;
-
+  /* gap: 1rem; */
+  text-align: center;
   @media (max-width: $mqminwidth) {
-    grid-template-columns: 1fr;
+    grid-template-areas: "formtitle inputtext inputsubmit";
   }
 }
 
-.form__email {
-  text-align: right;
-
-  @media (max-width: $mqminwidth) {
-    text-align: left;
-  }
+.form__h3 {
+  grid-area: formtitle;
 }
 
-.form__input {
-  width: 100%;
+.form__input-text {
+  grid-area: inputtext;
+  width: 80%;
   padding: 0.75rem;
   border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    background-color: #e6c376;
+  }
+}
+.form__input-submit {
+  grid-area: inputsubmit;
+  width: 20%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  background-color: $corporate;
 
   &:hover {
     cursor: pointer;
