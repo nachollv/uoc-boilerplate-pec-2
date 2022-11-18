@@ -1,0 +1,91 @@
+.container-bio {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container-bio__caption {
+  font-size: 0.75rem;
+  text-align: center;
+
+  @media (max-width: $mqminwidth) {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+}
+
+.container-bio__h1 {
+  font-family: $font-family-serif;
+}
+
+.container-bio__h2 {
+  font-family: $font-family-serif;
+}
+
+.container-bio__h4 {
+  margin-left: 0.5rem;
+  text-align: left;
+
+  &::after {
+    content: " :";
+  }
+}
+
+.container-bio__p {
+  font-family: $font-family-sans-serif;
+  font-weight: 100;
+  font-size: 1.25rem;
+  text-align: left;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+
+  @media ( max-width: $mqminwidth ) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.container-bio__cite {
+  font-weight: 400;
+}
+
+.container-bio__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  @media (max-width: $mqminwidth) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container-bio__img {
+  width: 100%;
+  height: auto;
+}
+
+.container-bio__dl {
+  border: 3px double #cccccc;
+  padding: 0.5rem;
+}
+
+.container-bio__dt {
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  color: #000000;
+
+  &::after {
+    content: ":";
+  }
+}
+
+.container-bio__dd {
+  margin: 0 0 0 110px;
+  padding: 0 0 0.5rem 0;
+  text-align: left;
+}

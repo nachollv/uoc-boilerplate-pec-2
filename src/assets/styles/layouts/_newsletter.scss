@@ -1,0 +1,51 @@
+.form {
+  display: grid;
+  grid-template-areas: "formtitle formtitle" "inputtext inputsubmit";
+  margin-top: 1rem;
+  /* gap: 1rem; */
+  text-align: center;
+  
+  @media (max-width: $mqminwidth) {
+    grid-template-areas: "formtitle inputtext inputsubmit";
+  }
+}
+
+.form__caption {
+  grid-area: formtitle;
+  margin: 0.5rem;
+}
+
+.form__left {
+  grid-area: inputtext;
+  text-align: right;
+}
+
+.form__right {
+  grid-area: inputsubmit;
+  text-align: left;
+  border: none;
+}
+
+.form__input-text {
+  padding: 0.75rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    background-color: #e6c376;
+  }
+}
+.form__input-submit {
+  padding: 0.75rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #e4a321;
+  }
+
+  &:focus {
+    background-color: #e6c376;
+  }
+}

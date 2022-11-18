@@ -1,0 +1,18 @@
+.form--contact {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.form__section {
+  border: 1px dotted #bbbaba;
+  text-align: left;
+  padding: 5px;
+}
+
+.form__input--medium {
+  width: 50%;
+
+  @media (max-width: $mqminwidth) {
+    width: 100%;
+  }
+}
