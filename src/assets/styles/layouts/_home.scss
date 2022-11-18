@@ -196,15 +196,24 @@ body {
   }
 }
 
-.form__h3 {
+.form__caption {
   grid-area: formtitle;
+  margin: 0.5rem;
+}
+
+.form__left {
+  grid-area: inputtext;
+  text-align: right;
+}
+
+.form__right {
+  grid-area: inputsubmit;
+  text-align: left;
+  border: none;
 }
 
 .form__input-text {
-  grid-area: inputtext;
-  width: 80%;
   padding: 0.75rem;
-  border-radius: 5px;
 
   &:hover {
     cursor: pointer;
@@ -215,14 +224,11 @@ body {
   }
 }
 .form__input-submit {
-  grid-area: inputsubmit;
-  width: 20%;
   padding: 0.75rem;
-  border-radius: 5px;
-  background-color: $corporate;
 
   &:hover {
     cursor: pointer;
+    background-color: #e4a321;
   }
 
   &:focus {
