@@ -34,13 +34,6 @@ body {
   }
 }
 
-/* .festival-header--mobile {
-
-  @media (max-width: $mqminwidth) {
-    display: none;
-  }
-} */
-
 .festival-header__logo {
   margin-left: auto;
   margin-right: auto;
@@ -83,7 +76,7 @@ body {
   box-shadow: 0 2px 1px rgba( 0, 0, 0, 0.09 ), 0 4px 2px rgba( 0, 0, 0, 0.09 ), 0 8px 4px rgba( 0, 0, 0, 0.09 ), 0 16px 8px rgba( 0, 0, 0, 0.09 ), 0 32px 16px rgba( 0, 0, 0, 0.09 );
 
   @media (max-width: $mqminwidth) {
-    margin: 0;
+    /* margin: auto; */
     padding: 0;
   }
 }
@@ -95,6 +88,7 @@ body {
 
   @media (max-width: $mqminwidth) {
     grid-template-areas: "picture" "titlejazz" "titleband" "blues" "bluesquartet" "jazz" "jazzquartet" "live" "music";
+    row-gap: 3rem;
   }
 }
 
