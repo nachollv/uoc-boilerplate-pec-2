@@ -5,7 +5,29 @@
         
         <section class="form__left"><input class="form__input-text" type="mail" id="your-mail" name="your-mail" required placeholder="mymail@domain.com"></section>
         
-        <section class="form__right"><button class="form__input-submit">Subscribe</button></section>
+        <section class="form__right"><button class="form__input-submit"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">Subscribe</button></section>
 
     </form>
+
+    <!-- Modal -->
+    <div class="modal modal-dialog modal-dialog-centered fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Please, confirm your subscription to our newsletter</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <strong>Do you really want to subscribe to our newsletter?</strong>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, thank you</button>
+          <button type="button" class="btn btn-primary">Yes, please</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  
 </section>

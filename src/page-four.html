@@ -17,13 +17,13 @@
       <form class="container" action="/the_action_page.php">
           <div class="row align-items-start">
             <div class="col">
-              <section class="form-floating">
+              <section class="form-floating shadow-lg shadow-lg">
                 <input type="text" class="form-control" id="floatingFirstName" placeholder="your first name">
                 <label for="floatingFirstName">First name</label>
               </section>
             </div>
             <div class="col">
-              <section class="form-floating">
+              <section class="form-floating shadow-lg">
                 <input type="text" class="form-control" id="floatingLastName" placeholder="your last name">
                 <label for="floatingLastName">Last name</label>
               </section>
@@ -31,13 +31,13 @@
           </div>
           <div class="row align-items-start">
             <div class="col">
-              <section class="form-floating">
+              <section class="form-floating shadow-lg">
                 <input type="text" class="form-control" id="floatingContactMail" placeholder="your contact mail address">
                 <label for="floatingContactMail">Email address</label>
               </section>
             </div>
             <div class="col">
-              <section class="form-floating">
+              <section class="form-floating shadow-lg">
                 <select class="form-select" id="instruments" name="instruments">
                   <option value="none">---Select your instrument---</option>
                   <option value="Trumpet">Trumpet</option>
@@ -51,7 +51,7 @@
           </div>
           <div class="row align-items-start">
             <div class="col">
-              <section class="form-floating">
+              <section class="form-floating shadow-lg">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                 <label for="floatingTextarea">Tell us about your skills</label>
               </section>
@@ -81,7 +81,11 @@
 
             <div class="col">
               <section class="form-check form-switch">
-                <button type="button" class="btn btn-secondary">Send</button>
+                <button type="button" class="btn btn-secondary"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Send us your details and you will be promptly informed of our latest concerts."
+               >Send</button>
               </section>
             </div>
           </div>          

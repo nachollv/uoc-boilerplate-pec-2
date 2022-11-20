@@ -22,10 +22,24 @@ body {
   grid-template-columns: auto 1fr;
 
   @media (max-width: $mqminwidth) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: none;
   }
 }
+
+.festival-header__button {
+  display: none;
+
+  @media (max-width: $mqminwidth) {
+    display: block;
+  }
+}
+
+/* .festival-header--mobile {
+
+  @media (max-width: $mqminwidth) {
+    display: none;
+  }
+} */
 
 .festival-header__logo {
   margin-left: auto;
