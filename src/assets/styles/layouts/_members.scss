@@ -1,3 +1,9 @@
+.container{
+
+  @media (max-width: $mqminwidth) {
+    padding: 0;
+  }
+}
 .container--flex {
   max-width: $mqmaxwidth;
   margin: auto;

@@ -1,6 +1,10 @@
-.container {
+.container--contact {
   text-align: left;
   padding: 4rem;
+
+  @media (max-width: $mqminwidth) {
+    padding: 0;
+  }
 }
 
 .custom-tooltip {
