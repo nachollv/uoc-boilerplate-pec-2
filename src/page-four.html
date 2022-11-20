@@ -15,7 +15,7 @@
     <include src="./views/header.html"></include>
 
       <form class="container" action="/the_action_page.php">
-          <div class="row">
+          <div class="row align-items-start">
             <div class="col">
               <section class="form-floating">
                 <input type="text" class="form-control" id="floatingFirstName" placeholder="your first name">
@@ -29,7 +29,7 @@
               </section>
             </div>
           </div>
-          <div class="row">
+          <div class="row align-items-start">
             <div class="col">
               <section class="form-floating">
                 <input type="text" class="form-control" id="floatingContactMail" placeholder="your contact mail address">
@@ -38,7 +38,6 @@
             </div>
             <div class="col">
               <section class="form-floating">
-                <label for="cars">Choose an instrument:</label><br>
                 <select class="form-select" id="instruments" name="instruments">
                   <option value="none">---Select your instrument---</option>
                   <option value="Trumpet">Trumpet</option>
@@ -46,10 +45,11 @@
                   <option value="Clarinet">Clarinet</option>
                   <option value="Bassist">Bassist</option>
                 </select>
+                <label for="instruments">Choose an instrument:</label>
               </section>
             </div>
           </div>
-          <div class="row">
+          <div class="row align-items-start">
             <div class="col">
               <section class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
@@ -60,18 +60,18 @@
               <section class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
-                  Yes, i want to receive your commercial news
+                  Yes, I agree to receive your commercial communications.
                 </label>
               </section>
               <section class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
-                  No, i dont want to receive your commercial news
+                  No, I dont agree to receive your commercial communications.
                 </label>
               </section>
             </div>
           </div>
-          <div class="row">
+          <div class="row align-items-start">
             <div class="col">
               <section class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
