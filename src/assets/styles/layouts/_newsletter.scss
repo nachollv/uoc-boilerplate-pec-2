@@ -6,7 +6,8 @@
   text-align: center;
   
   @media (max-width: $mqminwidth) {
-    grid-template-areas: "formtitle inputtext inputsubmit";
+    grid-template-areas: "formtitle" "inputtext" "inputsubmit";
+    text-align: center;
   }
 }
 
@@ -18,12 +19,20 @@
 .form__left {
   grid-area: inputtext;
   text-align: right;
+
+  @media (max-width: $mqminwidth) {
+    text-align: center;
+  }
 }
 
 .form__right {
   grid-area: inputsubmit;
   text-align: left;
   border: none;
+
+  @media (max-width: $mqminwidth) {
+    text-align: center;
+  }
 }
 
 .form__input-text {
