@@ -17,12 +17,20 @@ $mqminwidth: 650px;
 $mqmaxwidth: 1380px;
 
 /* Bootstrap sass variables */
+$theme-colors: (
+ "primary": $corporate
+);
+
 $grid-columns:      12;
 $grid-gutter-width: 4.5rem;
 $grid-row-columns:  6;
 
 $tooltip-color: $button;
 $tooltip-opacity: 1.0;
+
+$form-check-input-bg: $masterbrand;
+$form-check-input-focus-border: #ffffff;
+$form-check-input-checked-bg-color: $corporate;
 
 $modal-footer-margin-between:       2.5rem;
 $modal-dialog-margin:               2.5rem;
