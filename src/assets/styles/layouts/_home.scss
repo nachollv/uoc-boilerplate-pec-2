@@ -32,7 +32,7 @@ body {
   @media (max-width: $mqminwidth) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid black;
+    border: 1px solid #000000;
   }
 }
 
