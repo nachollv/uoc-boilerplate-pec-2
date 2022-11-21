@@ -32,11 +32,11 @@ body {
   @media (max-width: $mqminwidth) {
     display: inline;
     background-color: $button;
-    border: 4px solid $corporate;
+    border: 4px solid #000000;
 
     &:hover {
       background-color: $corporate;
-      border: 4px solid #000000;
+      border: 4px solid $button;
       box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
     }
   }
