@@ -26,11 +26,13 @@ body {
   }
 }
 
-.festival-header__button {
+.festival-header__menu-mobile {
   display: none;
 
   @media (max-width: $mqminwidth) {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
   }
 }
 
