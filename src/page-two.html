@@ -8,13 +8,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Jazz Festival</title>
   </head>
-  <body>
+  <body onload="hidePlaceHolder()">
 
     <include src="./views/header.html"></include>
     <h1>My Jazz BAND MEMBERS</h1>
     <section class="container container--flex">
 
-      <article class="container-flex__card">
+      <article class="container-flex__card container-flex__card--hidden" id="memberAndrew">
 
           <header class="container-flex__header">
             <picture class="container-flex__picture">
@@ -28,10 +28,29 @@
           <details class="container-flex__detail">
               <summary class="container-flex__content">Detailed info</summary>
               <p class="container-flex__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Diam quis enim lobortis scelerisque fermentum dui.</p>
-          </details>    
+          </details>
+
+      </article>
+      <article class="card container-flex__card-bw" aria-hidden="true" id="memberAndrewPlaceHolder">
+
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6 placeholder-wave"></a>
+        </div>
+
       </article>
 
-      <article class="container-flex__card">
+      <article class="container-flex__card container-flex__card--hidden" id="memberStephen">
         
           <header class="container-flex__header">
             <picture class="container-flex__picture">
@@ -45,9 +64,26 @@
               <summary class="container-flex__content">Detailed info</summary>
               <p class="container-flex__p">Netus et malesuada fames ac turpis egestas maecenas. Nisl condimentum id venenatis a condimentum.</p>
           </details>
+
+      </article>
+      <article class="card container-flex__card-bw" aria-hidden="true" id="memberStephenPlaceHolder">
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6 placeholder-wave"></a>
+        </div>
       </article>
 
-      <article class="container-flex__card">
+      <article class="container-flex__card container-flex__card--hidden" id="memberJohn">
         
           <header class="container-flex__header">
             <picture class="container-flex__picture">
@@ -63,8 +99,26 @@
           </details>
         
       </article>
+      <article class="card container-flex__card-bw" aria-hidden="true" id="memberJohnPlaceHolder">
 
-      <article class="container-flex__card">  
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6 placeholder-wave"></a>
+        </div>
+
+      </article>
+
+      <article class="container-flex__card container-flex__card--hidden" id="memberRobert">  
         
           <header class="container-flex__header">         
             <picture class="container-flex__picture">
@@ -78,9 +132,28 @@
             <p class="container-flex__p">Eu lobortis elementum nibh tellus molestie. Sed enim ut sem viverra aliquet eget. Lectus sit amet est placerat in egestas erat imperdiet.</p>   
             <summary class="container-flex__content">Detailed info</summary>
           </details>
-      </article>
 
-      <article class="container-flex__card">
+      </article>
+      <article class="card container-flex__card-bw" aria-hidden="true" id="memberRobertPlaceHolder">
+
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6 placeholder-wave"></a>
+        </div>
+
+      </article>      
+
+      <article class="container-flex__card container-flex__card--hidden" id="memberWilliam"> 
         
           <header class="container-flex__header">     
             <picture class="container-flex__picture">
@@ -94,9 +167,28 @@
               <p class="container-flex__p">Tellus at urna condimentum mattis pellentesque id nibh tortor id. Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Justo laoreet sit amet cursus.</p>
               <summary class="container-flex__content">Detailed info</summary>
             </details>
-      </article>
 
-      <article class="container-flex__card">
+      </article>
+      <article class="card container-flex__card-bw" aria-hidden="true" id="memberWilliamPlaceHolder">
+
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6 placeholder-wave"></a>
+        </div>
+
+      </article>          
+
+      <article class="container-flex__card container-flex__card--hidden" id="memberPeter">
         
           <header class="container-flex__header">
             <picture class="container-flex__picture">
@@ -110,7 +202,26 @@
               <p class="container-flex__p">Tellus at urna condimentum mattis pellentesque id nibh tortor id. Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Justo laoreet sit amet cursus. Nulla pellentesque dignissim enim sit amet venenatis urna. Ac tortor dignissim convallis aenean.</p>
               <summary class="container-flex__content">Detailed info</summary>
           </details>
+
       </article>
+      <article class="card container-flex__card-bw" aria-hidden="true" id="memberPeterPlaceHolder">
+
+        <img src="#" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6 placeholder-wave"></a>
+        </div>
+
+      </article>          
 
     </section>
 
@@ -120,3 +231,51 @@
   
   </body>
 </html>
+
+<script>
+
+function hidePlaceHolder() {
+
+
+  setTimeout(placeHolderOff, 4000);
+
+}
+
+function placeHolderOff() {
+  let memberAndrewPlaceHolder = document.getElementById("memberAndrewPlaceHolder")
+  let memberAndrew = document.getElementById('memberAndrew');
+
+  let memberStephenPlaceHolder = document.getElementById("memberStephenPlaceHolder")
+  let memberStephen = document.getElementById('memberStephen');
+
+  let memberJohnPlaceHolder = document.getElementById("memberJohnPlaceHolder")
+  let memberJohn = document.getElementById('memberJohn');
+
+  let memberRobertPlaceHolder = document.getElementById("memberRobertPlaceHolder")
+  let memberRobert = document.getElementById('memberRobert');
+
+  let memberWilliamPlaceHolder = document.getElementById("memberWilliamPlaceHolder")
+  let memberWilliam = document.getElementById('memberWilliam');
+
+  let memberPeterPlaceHolder = document.getElementById("memberPeterPlaceHolder")
+  let memberPeter = document.getElementById('memberPeter');
+
+  memberAndrewPlaceHolder.style.display = "none";
+  memberStephenPlaceHolder.style.display = "none";
+  memberJohnPlaceHolder.style.display = "none";
+  memberRobertPlaceHolder.style.display = "none";
+  memberWilliamPlaceHolder.style.display = "none";
+  memberPeterPlaceHolder.style.display = "none";
+
+
+  memberAndrew.classList.remove('container-flex__card--hidden');
+  memberStephen.classList.remove('container-flex__card--hidden');
+  memberJohn.classList.remove('container-flex__card--hidden');
+  memberRobert.classList.remove('container-flex__card--hidden');
+  memberWilliam.classList.remove('container-flex__card--hidden');
+  memberPeter.classList.remove('container-flex__card--hidden');
+
+}
+ 
+
+</script>

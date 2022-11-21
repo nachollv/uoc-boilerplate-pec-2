@@ -27,6 +27,21 @@
   }
 }
 
+.container-flex__card-bw {
+  background-color: #7b7a78;
+  border: 2px solid #000000;
+  width: calc( $mqmaxwidth / 2 - 6rem );
+  padding: 6rem;
+  border-radius: 2rem;
+  margin: 10px;
+  box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
+
+  @media (max-width: $mqminwidth) {
+    width: 100%;
+    padding: 3rem 1rem 3rem 1rem;
+  }
+}
+
 .container-flex__detail {
   font-weight: 800;
 
@@ -44,4 +59,8 @@
 .container-flex__p {
   text-align: left;
   text-decoration: none;
+}
+
+.container-flex__card--hidden {
+  display: none;
 }
