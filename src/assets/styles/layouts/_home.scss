@@ -120,6 +120,10 @@ body {
   border-radius: 2rem;
   padding: 2rem;
   height: 8rem;
+
+  @media ( max-width: $mqminwidth ) {
+    padding: 1rem;
+  }
 }
 
 .container__picture {
@@ -173,7 +177,7 @@ body {
   box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
 
   @media (max-width: $mqminwidth) {
-    padding: 1rem;
+    padding: 2rem;
     font-size: 2rem;
     text-align: center;
   }
@@ -231,6 +235,10 @@ body {
   grid-area: concert;
   transform: rotate( 0 );
   letter-spacing: 1rem;
+
+  @media (max-width: $mqminwidth) {
+    letter-spacing: 0;
+  }
 }
 
 .festival-footer {
