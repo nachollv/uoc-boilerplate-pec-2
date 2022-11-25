@@ -2,7 +2,6 @@
   display: grid;
   grid-template-areas: "formtitle formtitle" "inputtext inputsubmit";
   margin-top: 1rem;
-  z-index: 9999;
   text-align: center;
   
   @media (max-width: $mqminwidth) {
@@ -14,6 +13,7 @@
 .form__caption {
   grid-area: formtitle;
   margin: 0.5rem;
+  z-index: 9999;
 }
 
 .form__left {

@@ -103,7 +103,7 @@ body {
   }
 
   @media ( max-width: $mqminwidth ) {
-    grid-template-areas: "picture" "titlejazz" "titleband" "blues" "bluesquartet" "jazz" "jazzquartet" "in" "concert";
+    grid-template-areas: "picture" "picture" "picture" "picture" "picture" "titlejazz" "titleband" "blues" "bluesquartet" "jazz" "jazzquartet" "in" "concert";
     row-gap: 3rem;
   }
 }
@@ -130,54 +130,6 @@ body {
   max-width: 100%;
 }
 
-.container--h1-jazz {
-  grid-area: titlejazz;
-  transform: rotate( -45deg );
-  background-color: #e6c376;
-}
-
-.container--h1-band {
-  grid-area: titleband;
-  transform: rotate( 50deg );
-  background-color: #e6c376;
-}
-
-.container--h2-blues {
-  grid-area: blues;
-  transform: rotate( -20deg );
-  background-color: #e4a321;
-}
-
-.container--h2-bluesquartet {
-  grid-area: bluesquartet;
-  transform: rotate( 40deg );
-  background-color: #e4a321;
-}
-
-.container--h2-jazz {
-  grid-area: jazz;
-  transform: rotate( 30deg );
-  background-color: #e4a321;
-}
-
-.container--h2-jazzquartet {
-  grid-area: jazzquartet;
-  transform: rotate( 15deg );
-  background-color: #e4a321;
-}
-
-.container--h4-in {
-  grid-area: in;
-  transform: rotate( 40deg );
-  letter-spacing: 1rem;
-}
-
-.container--h4-concert {
-  grid-area: concert;
-  transform: rotate( 0 );
-  letter-spacing: 1rem;
-}
-
 .container--h1 {
   /*   font-family: $font-family-serif;
   font-size: 3rem;
@@ -189,9 +141,21 @@ body {
 
   border: 5px solid #b91b0b;
   box-shadow: 0 25px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
+}
 
-  @media (min-width: $mqminwidth) {
-    /* font-size: 36px; */
+.container--h1-jazz {
+  grid-area: titlejazz;
+  transform: rotate( -45deg );
+  background-color: #e6c376;
+}
+
+.container--h1-band {
+  grid-area: titleband;
+  transform: rotate( 50deg );
+  background-color: #e6c376;
+
+  @media ( max-width: $mqminwidth) {
+    transform: rotate(-45deg)
   }
 }
 
@@ -229,10 +193,44 @@ body {
   box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
 
   @media (max-width: $mqminwidth) {
-    padding: 0.5rem;
-    font-size: 1rem;
     text-align: center;
   }
+}
+
+.container--h2-blues {
+  grid-area: blues;
+  transform: rotate( -20deg );
+  background-color: #e4a321;
+}
+
+.container--h2-bluesquartet {
+  grid-area: bluesquartet;
+  transform: rotate( 40deg );
+  background-color: #e4a321;
+}
+
+.container--h2-jazz {
+  grid-area: jazz;
+  transform: rotate( 30deg );
+  background-color: #e4a321;
+}
+
+.container--h2-jazzquartet {
+  grid-area: jazzquartet;
+  transform: rotate( 15deg );
+  background-color: #e4a321;
+}
+
+.container--h4-in {
+  grid-area: in;
+  transform: rotate( 40deg );
+  letter-spacing: 1rem;
+}
+
+.container--h4-concert {
+  grid-area: concert;
+  transform: rotate( 0 );
+  letter-spacing: 1rem;
 }
 
 .festival-footer {
