@@ -154,8 +154,8 @@ body {
   transform: rotate( 50deg );
   background-color: #e6c376;
 
-  @media ( max-width: $mqminwidth) {
-    transform: rotate(-45deg)
+  @media (max-width:$mqminwidth) {
+    transform: rotate( -45deg )
   }
 }
 
