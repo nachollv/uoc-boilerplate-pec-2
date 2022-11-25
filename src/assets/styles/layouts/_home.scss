@@ -79,24 +79,47 @@ body {
   padding: 1rem;
   border-radius: 0;
   text-align: center;
-  background: #020024;
-  background: radial-gradient( circle, rgba( 255, 255, 255, 1 ) 85%, rgba( 255, 255, 255, 1 ) 0%, #f6e9d6 100% );
+  /*   background: #020024; */
   box-shadow: 0 2px 1px rgba( 0, 0, 0, 0.09 ), 0 4px 2px rgba( 0, 0, 0, 0.09 ), 0 8px 4px rgba( 0, 0, 0, 0.09 ), 0 16px 8px rgba( 0, 0, 0, 0.09 ), 0 32px 16px rgba( 0, 0, 0, 0.09 );
-
-  @media (max-width: $mqminwidth) {
+  background: linear-gradient( to top left, rgba( 255, 255, 255, 1 ) 60%, rgba( 255, 255, 255, 1 ) 0%, #f6e9d6 100% );
+  /*   background: radial-gradient( circle, rgba( 255, 255, 255, 1 ) 85%, rgba( 255, 255, 255, 1 ) 0%, #f6e9d6 100% );
+  */
+  
+  @media ( max-width: $mqminwidth ) {
     padding: 0;
   }
 }
 
 .container--grid {
-  display: grid;
-  grid-template-areas: "picture titlejazz titleband" "picture blues bluesquartet" "picture jazz jazzquartet" "picture live music";
-  row-gap: 1rem;
+  overflow: hidden;
+  /*   margin: 0 -10px;
+  padding: 1rem; */
 
-  @media (max-width: $mqminwidth) {
-    grid-template-areas: "picture" "titlejazz" "titleband" "blues" "bluesquartet" "jazz" "jazzquartet" "live" "music";
+  @supports ( display: grid ) {
+    display: grid;
+    grid-template-areas: "picture titlejazz titleband" "picture blues bluesquartet" "picture jazz jazzquartet" "picture in concert";
+    row-gap: 5rem;
+    overflow: visible;
+  }
+
+  @media ( max-width: $mqminwidth ) {
+    grid-template-areas: "picture" "titlejazz" "titleband" "blues" "bluesquartet" "jazz" "jazzquartet" "in" "concert";
     row-gap: 3rem;
   }
+}
+
+.container__item  {
+  /*   float: left;
+  width: calc(33.333333% - 20px);
+  margin: 0 10px 20px 10px; */
+
+  font-family: $font-family-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: $corporate;
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 8rem;
 }
 
 .container__picture {
@@ -107,74 +130,82 @@ body {
   max-width: 100%;
 }
 
-.container__h1--jazz {
+.container--h1-jazz {
   grid-area: titlejazz;
   transform: rotate( -45deg );
+  background-color: #e6c376;
 }
 
-.container__h1--band {
+.container--h1-band {
   grid-area: titleband;
   transform: rotate( 50deg );
+  background-color: #e6c376;
 }
 
-.container__h2--blues {
+.container--h2-blues {
   grid-area: blues;
   transform: rotate( -20deg );
+  background-color: #e4a321;
 }
 
-.container__h2--bluesquartet {
+.container--h2-bluesquartet {
   grid-area: bluesquartet;
   transform: rotate( 40deg );
+  background-color: #e4a321;
 }
 
-.container__h2--jazz {
+.container--h2-jazz {
   grid-area: jazz;
-  transform: rotate( -30deg );
+  transform: rotate( 30deg );
+  background-color: #e4a321;
 }
 
-.container__h2--jazzquartet {
+.container--h2-jazzquartet {
   grid-area: jazzquartet;
   transform: rotate( 15deg );
+  background-color: #e4a321;
 }
 
-.container__h4--live {
-  grid-area: live;
-  transform: rotate( -40deg );
+.container--h4-in {
+  grid-area: in;
+  transform: rotate( 40deg );
   letter-spacing: 1rem;
 }
 
-.container__h4--music {
-  grid-area: music;
+.container--h4-concert {
+  grid-area: concert;
   transform: rotate( 0 );
   letter-spacing: 1rem;
 }
 
-.container__h1 {
-  font-family: $font-family-serif;
+.container--h1 {
+  /*   font-family: $font-family-serif;
   font-size: 3rem;
   font-weight: 800;
   color: $corporate;
   border-radius: 2rem;
   padding: 2rem;
-  background-color: #e6c376;
+  background-color: #e6c376; */
+
   border: 5px solid #b91b0b;
-  box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
+  box-shadow: 0 25px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
 
   @media (min-width: $mqminwidth) {
     /* font-size: 36px; */
   }
 }
 
-.container__h2 {
-  font-family: $font-family-sans-serif;
+.container--h2 {
+  /*   font-family: $font-family-sans-serif;
   font-size: 3rem;
   font-weight: 800;
   color: $corporate;
   border-radius: 2rem;
-  background-color: #e4a321;
-  border: 1px solid #b91b0b;
   margin: 2rem;
-  padding: 3rem;
+  background-color: #e4a321; */
+
+  border: 1px solid #b91b0b;
+  /* padding: 3rem; */
   box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
 
   @media (max-width: $mqminwidth) {
@@ -184,16 +215,17 @@ body {
   }
 }
 
-.container__h4 {
-  font-family: $font-family-sans-serif;
+.container--h4 {
+  /*   font-family: $font-family-sans-serif;
+  border-radius: 2rem;
+  margin: 2rem; */
+
   font-size: 2rem;
   font-weight: 600;
   color: $corporate;
   background-color: #000000;
   border: 2px dotted #e4a321;
-  border-radius: 2rem;
-  margin: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: 0 4px 6px -1px rgba( 0, 0, 0, 0.1 ), 0 2px 4px -1px rgba( 0, 0, 0, 0.06 );
 
   @media (max-width: $mqminwidth) {
