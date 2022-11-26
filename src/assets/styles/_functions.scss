@@ -1,0 +1,8 @@
+@use "sass:math";
+
+// Esta función establecer el ancho de una caja en función de '$num' que es el número de columnas de la rejilla
+
+@function box-width( $num-col ) {
+  
+  @return math.div($num-col * 100%, $grid-columns);
+}

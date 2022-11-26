@@ -11,9 +11,13 @@ $corporate: #b91b0b;
 $masterbrand: #e2b776;
 $button: #e4a321;
 
+$button-typography: $font-family-sans-serif;
+$button-ripple-surface: $corporate;
+$button-ripple-radius-bounded: 0;
+
 $bg: color.scale( $masterbrand, $lightness: 70% );
 
-$mqminwidth: 650px;
+$mqminwidth: 789px;
 $mqmaxwidth: 1380px;
 
 /* Bootstrap sass variables */

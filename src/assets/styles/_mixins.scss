@@ -1,0 +1,46 @@
+@mixin body-base {
+  display: flex;
+  flex-direction: column;
+  max-width: box-width( 8 );
+  height: 100vh;
+  margin: auto;
+  padding: 0;
+  background-color: $bg;
+  color: $corporate;
+  line-height: 24px;
+  
+  font: {
+    family: $font-family-sans-serif;
+    size: 16px;
+  }
+}
+
+@mixin item-standard {
+  font-family: $font-family-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: $corporate;
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 8rem;
+}
+  
+@mixin button-standard {
+  font-family: $button-typography;
+  border-radius: $button-ripple-radius-bounded;
+  text-align: center;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid $corporate;
+
+  &:hover{
+    color: $masterbrand;
+    cursor: pointer;
+    border: {
+      style:inset;
+      width: 1px;
+      color: $masterbrand;
+    }
+  }
+}

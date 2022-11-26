@@ -4,12 +4,16 @@
  */
 
 /**
- * Import variables
+ * Import resets, variables, mixins and variables
  */
 
-@import "variables.scss";
+@import "reset.scss";    // reseting browsers defaults
 
-@import "reset.scss";
+@import "variables.scss"; // importing the variables
+
+@import "mixins.scss";    // importing the mixins
+
+@import "functions.scss"; // importing the functions
 
 
 /**
