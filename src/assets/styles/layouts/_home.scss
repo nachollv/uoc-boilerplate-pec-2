@@ -7,9 +7,7 @@ body {
   @include body-base;
 
   @media ( max-width: $mqminwidth ) {
-    body {
-      max-width: box-width( 12 );
-    }
+    max-width: box-width( 11 );
   }
 }
 
@@ -96,7 +94,7 @@ body {
 
   @media ( max-width: $mqminwidth ) {
     grid-template-areas: "picture" "picture" "picture" "picture" "picture" "titlejazz" "titleband" "blues" "bluesquartet" "jazz" "jazzquartet" "in" "concert";
-    row-gap: 3rem;
+    /* row-gap: 3rem; */
   }
 }
 
